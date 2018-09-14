@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="https://i.imgur.com/pu6wrOJ.png">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		The Student Democrats and Republicans of Fox Chapel
+	</title>
+</head>
+<body>
+	<div class="navbar">
+		<div class="titleinfo">
+			<img src="https://i.imgur.com/pu6wrOJ.png" alt="Logo" style="width:125px; height:100px; float: left;">
+			<div class="bar-title">
+				<i>
+					The Student Democrats<br/>
+					& Republicans<br/>
+					of Fox Chapel<br/>
+				</i>
+			</div>
+		</div>
+		<div class="menubutton" onclick="myFunction(this); toggleNav();">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+	</div>
+		<style>
+
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			.navbar {
+				overflow: hidden;
+				background-color: #000000;
+				padding: 10px 100px;
+				margin-top: 0;
+				height: 100%;
+			}
+
+			.titleinfo {
+				position: absolute;
+				vertical-align: center;
+				height: 7em;
+				display: flex;
+				align-items: center;
+			}
+
+			.bar-title {
+				font-size: 18px;
+				font-family: 'Nunito Sans', sans-serif;
+				color: white;
+				position: relative;
+				float: left;
+			}
+
+			.menubutton {
+				vertical-align: middle;
+				float: right;
+				cursor: pointer;
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+
+			.bar1, .bar2, .bar3 {
+				width: 34px;
+				height: 4px;
+				background-color: #ffffff;
+				margin: 6px 0;
+				transition: 0.4s;
+			}
+
+			.change .bar1 {
+				-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+				transform: rotate(-45deg) translate(-9px, 6px);
+			}
+
+			.change .bar2 {
+				opacity: 0;
+			}
+
+			.change .bar3 {
+				-webkit-transform: rotate(45deg) translate(-8px, -6px);
+				transform: rotate(45deg) translate(-8px, -6px);
+			}
+
+			</style>
+		<script>
+		function myFunction(x) {
+			x.classList.toggle("change");
+		}
+	</script>
+	<div id="sidenav" class="menuoptions">
+		<div class="options">
+			<a href="#"><i>Home</i></a>
+			<a href="#"><i>About</i></a>
+			<a href="#"><i>FAQ</i></a>
+			<a href="#"><i>Contact</i></a>
+		</div>
+		<div class="join">
+			<a href="https://goo.gl/forms/9L9cNjJnPodrqAaC3">JOIN</a>
+		</div>
+	</div>
+	<style>
+		
+		.menuoptions {
+			height: 100%;
+    		width: 0;
+ 			position: fixed;
+		    z-index: 1;
+		    top: 1;
+ 		    right: 0;
+ 		    background-color: black;
+ 		    overflow-x: hidden;
+ 		    transition: 0.5s;
+ 		    opacity: 0.9;
+		}
+
+		.menuoptions a {
+    		padding: 8px 8px 8px 32px;
+   			text-decoration: none;
+    		font-size: 25px;
+    		font-family: 'Nunito Sans', sans-serif;
+    		font-style: oblique;
+			color: white;
+    		display: block;
+    		transition: 0.3s;
+		}
+
+		.join {
+			background-color: #737373;
+		}
+
+		.join a:hover {
+			color: black;
+		}
+
+		.options a:hover {
+    		color: #818181;
+		}
+
+	</style>
+	<script>
+		function toggleNav() {
+			var w = document.getElementById("sidenav").style.width;
+			if (w == "0px" || w == 0) {
+				document.getElementById("sidenav").style.width = "400px";
+			}
+			else {
+				document.getElementById("sidenav").style.width = 0;
+			}
+		}
+	</script>
+	<div class="promoimage">
+		<!-- this will need to be replaced -->
+		<img src="https://i.imgur.com/wNLfBig.jpg">
+		<div class="textbox">
+			<div class="tbox-main">
+				<i>The world won't fix itself.</i>
+			</div>
+			<div class="tbox-subtitle">
+				But it can be changed by you. Have your voice be heard.
+			</div>
+			<div class="tbox-button">
+				<a href="https://goo.gl/forms/9L9cNjJnPodrqAaC3" class="button"><b>JOIN TODAY</b></a>
+			</div>
+		</div>
+	</div>
+	<style>
+
+		.promoimage {
+			position: relative;
+		}
+
+		.promoimage img {
+			padding: 0;
+			left: 0%;
+			width: 100%;
+			z-index: 0;
+		}
+
+		.textbox {
+			position: absolute;
+			padding: 40px 40px;
+			background-color: black;
+			opacity: 0.8;
+			text-align: center;
+			font-family: 'Nunito Sans', sans-serif;
+			top: 50%;
+   			left: 50%;
+    		transform: translate(-50%, -50%);
+
+		}
+
+		.tbox-main {
+			color: white;
+			padding: 5px;
+			font-size: 24px;
+		}
+
+		.tbox-subtitle {
+			color: white;
+			padding: 10px;
+			padding-bottom: 25px;
+		}
+
+		.tbox-button a{
+			padding: 10px;
+			background-color: white;
+			display: block;
+			opacity: 100%;
+			cursor: pointer;
+			display: block;
+			text-decoration: none;
+			color: black;
+			opacity: 1;
+		}
+
+	</style>
+</body>
+</html>
+
+
+
+
+
